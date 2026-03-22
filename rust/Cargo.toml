@@ -1,0 +1,37 @@
+[package]
+name = "tree-sitter-analysis"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+tree-sitter = "0.25"
+tree-sitter-java = "0.23"
+tree-sitter-python = "0.25"
+tree-sitter-javascript = "0.25"
+tree-sitter-typescript = "0.23"
+tree-sitter-go = "0.25"
+tree-sitter-rust = "0.24"
+tree-sitter-c = "0.24"
+tree-sitter-cpp = "0.23"
+tree-sitter-c-sharp = "0.23"
+tree-sitter-ruby = "0.23"
+tree-sitter-swift = "0.7"
+tree-sitter-scala = "0.25"
+tree-sitter-php = "0.24"
+tree-sitter-bash = "0.25"
+tree-sitter-html = "0.23"
+tree-sitter-css = "0.25"
+tree-sitter-json = "0.24"
+tree-sitter-yaml = "0.7"
+tree-sitter-md = "0.5"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+streaming-iterator = "0.1"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
