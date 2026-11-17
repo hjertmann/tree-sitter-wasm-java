@@ -21,11 +21,11 @@ repositories {
 }
 
 dependencies {
-    implementation("com.dylibso.chicory:runtime:1.4.0")
-    implementation("com.dylibso.chicory:wasi:1.4.0")
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.18.3")
+    implementation("com.dylibso.chicory:runtime:1.7.5")
+    implementation("com.dylibso.chicory:wasi:1.7.5")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.23.0")
 
-    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.14.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
